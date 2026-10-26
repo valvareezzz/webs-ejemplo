@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calçats Nord · Zapatería en Barcelona</title>
+<meta name="description" content="Calçats Nord, zapatería de barrio en Barcelona. Calzado de mujer, hombre y botas. Asesoramiento y atención personal. Tel. 600 000 000.">
+<meta name="theme-color" content="#1F2A2E">
+<meta property="og:title" content="Calçats Nord · Barcelona">
+<meta property="og:description" content="Zapatería de barrio en Barcelona. Ven a probártelos.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1200&q=80&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1F2A2E;--ink2:#3B4A50;--sand:#F4EFE8;--paper:#FBF9F6;--accent:#B5562C;--accent-d:#8E3F1E;--muted:#6B7377;--line:#E6DFD5;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:10px;font-weight:700;font-size:.95rem;border:0;cursor:pointer;transition:background .15s,transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-accent{background:var(--accent);color:var(--white)}.btn-accent:hover{background:var(--accent-d)}
+.btn-line{border:1.5px solid currentColor;background:transparent}
+
+/* nav */
+header{position:fixed;inset:0 0 auto 0;z-index:40;transition:background .25s,box-shadow .25s;color:var(--white)}
+header.solid{background:var(--white);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:"DM Serif Display",serif;font-size:1.6rem;letter-spacing:.3px}
+.brand span{color:var(--accent)}
+nav ul{display:flex;gap:28px;list-style:none;font-weight:600;font-size:.95rem}
+nav a{opacity:.9}nav a:hover{opacity:1;color:var(--accent)}
+.burger{display:none;background:none;border:0;color:inherit;cursor:pointer}
+.burger svg{width:28px;height:28px}
+
+/* hero */
+.hero{min-height:92vh;position:relative;display:grid;place-items:center start;color:var(--white);overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,42,46,.88) 0%,rgba(31,42,46,.55) 45%,rgba(31,42,46,.1) 100%)}
+.hero .wrap{position:relative;z-index:1;width:100%}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;font-weight:700;color:#F0C7A9;margin-bottom:16px}
+.hero h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(2.6rem,6.5vw,5rem);line-height:1.02;max-width:640px;margin-bottom:18px}
+.hero p{max-width:480px;font-size:1.1rem;opacity:.92;margin-bottom:30px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+
+section{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:34px}
+h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(2rem,4.2vw,3rem);line-height:1.08}
+.sub{color:var(--muted);max-width:520px}
+
+/* galería */
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1.5px solid var(--line);background:var(--white);padding:8px 16px;border-radius:999px;font-weight:600;font-size:.9rem;cursor:pointer;font-family:inherit;color:var(--ink2)}
+.chip.on{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.item{position:relative;border-radius:16px;overflow:hidden;background:var(--sand);cursor:zoom-in;aspect-ratio:4/5}
+.item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.item:hover img{transform:scale(1.05)}
+.item figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.94);padding:6px 12px;border-radius:8px;font-weight:700;font-size:.85rem}
+.item.hide{display:none}
+.note{margin-top:18px;color:var(--muted);font-size:.9rem}
+
+/* por qué */
+.why{background:var(--ink);color:var(--white)}
+.why .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:40px}
+.why .f{border-top:2px solid var(--accent);padding-top:18px}
+.why .f h3{font-size:1.1rem;margin-bottom:6px}
+.why .f p{color:#C9D0D3;font-size:.95rem}
+.why .sub{color:#C9D0D3}
+
+/* tienda */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about .pics{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about .pics img{border-radius:16px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.about .pics img:last-child{margin-top:40px}
+.about p{color:var(--ink2);margin-top:16px}
+
+/* contacto */
+.contact{background:var(--sand)}
+.cgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:36px}
+form{background:var(--white);border-radius:18px;padding:30px;border:1px solid var(--line)}
+label{display:block;font-weight:700;font-size:.85rem;margin:14px 0 6px}
+input,textarea,select{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;background:var(--paper)}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--accent)}
+textarea{min-height:110px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ok{display:none;margin-top:14px;padding:12px 14px;border-radius:10px;background:#E5F3EA;color:#1E6B43;font-weight:600}
+.info{display:flex;flex-direction:column;gap:18px}
+.box{background:var(--white);border-radius:18px;padding:24px;border:1px solid var(--line)}
+.box h3{font-size:1rem;margin-bottom:10px}
+.hrs div{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.hrs div.today{color:var(--accent);font-weight:800}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);flex:1;min-height:240px}
+.map iframe{width:100%;height:100%;min-height:240px;border:0;display:block}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(15,20,22,.92);display:none;place-items:center;z-index:60;padding:24px;cursor:zoom-out}
+.lb.on{display:grid}
+.lb img{max-height:86vh;border-radius:12px}
+
+footer{background:var(--ink);color:#AEB7BA;padding:40px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer b{color:var(--white);font-family:"DM Serif Display",serif;font-weight:400;font-size:1.3rem}
+
+@media(max-width:860px){
+  nav ul{display:none;position:absolute;top:72px;left:0;right:0;background:var(--white);color:var(--ink);flex-direction:column;gap:0;box-shadow:0 10px 20px rgba(0,0,0,.08)}
+  nav ul.open{display:flex}
+  nav li a{display:block;padding:16px 22px;border-top:1px solid var(--line)}
+  .burger{display:block}
+  .about,.cgrid{grid-template-columns:1fr}
+  section{padding:70px 0}
+  .row2{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div style="background:#16302F;color:#fff;text-align:center;font:600 13px/1.4 system-ui,sans-serif;padding:8px 12px;position:relative;z-index:100">Web de ejemplo · negocio ficticio · <a href="index.html" style="color:#FFD39A">ver los 3 paquetes</a></div>
+
+<header id="top">
+  <div class="wrap">
+    <a class="brand" href="#">Calçats <span>Nord</span></a>
+    <nav>
+      <button class="burger" aria-label="Abrir menú" onclick="document.querySelector('nav ul').classList.toggle('open')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul>
+        <li><a href="#coleccion">Colección</a></li>
+        <li><a href="#tienda">La tienda</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="tel:+34600000000">600 000 000</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <img src="https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=2000&q=80&auto=format&fit=crop" alt="Zapatos de piel marrón">
+  <div class="wrap">
+    <div class="eyebrow">Zapatería de barrio · Barcelona</div>
+    <h1>Zapatos para caminar Barcelona</h1>
+    <p>Calzado de mujer y de hombre, botas y zapatos de vestir. Te ayudamos a encontrar la talla y el modelo que te va bien.</p>
+    <div class="ctas">
+      <a class="btn btn-accent" href="#coleccion">Ver la colección</a>
+      <a class="btn btn-line" href="#contacto">Cómo llegar</a>
+    </div>
+  </div>
+</section>
+
+<section id="coleccion">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>Esta temporada en tienda</h2>
+        <p class="sub">Una muestra de lo que puedes encontrar. Ven a probártelos o llámanos para saber si tenemos tu talla.</p>
+      </div>
+      <div class="chips" role="tablist">
+        <button class="chip on" data-f="all">Todo</button>
+        <button class="chip" data-f="mujer">Mujer</button>
+        <button class="chip" data-f="hombre">Hombre</button>
+        <button class="chip" data-f="botas">Botas</button>
+      </div>
+    </div>
+    <div class="gallery" id="gallery">
+      <figure class="item" data-c="mujer"><img loading="lazy" src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=700&q=75&auto=format&fit=crop" alt="Zapato de tacón estampado"><figcaption>Tacón estampado</figcaption></figure>
+      <figure class="item" data-c="hombre"><img loading="lazy" src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=700&q=75&auto=format&fit=crop" alt="Zapato tipo oxford verde"><figcaption>Oxford de piel</figcaption></figure>
+      <figure class="item" data-c="botas"><img loading="lazy" src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=700&q=75&auto=format&fit=crop" alt="Botas de piel marrón oscuro"><figcaption>Botas de piel</figcaption></figure>
+      <figure class="item" data-c="mujer"><img loading="lazy" src="https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?w=700&q=75&auto=format&fit=crop" alt="Salones azul marino"><figcaption>Salón clásico</figcaption></figure>
+      <figure class="item" data-c="hombre"><img loading="lazy" src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=700&q=75&auto=format&fit=crop" alt="Zapatos con hebilla"><figcaption>Zapato de hebilla</figcaption></figure>
+      <figure class="item" data-c="botas"><img loading="lazy" src="https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=700&q=75&auto=format&fit=crop" alt="Botín de piel camel"><figcaption>Botín camel</figcaption></figure>
+      <figure class="item" data-c="mujer"><img loading="lazy" src="https://images.unsplash.com/photo-1581101767113-1677fc2beaa8?w=700&q=75&auto=format&fit=crop" alt="Zapatos de fiesta con brillo"><figcaption>Para una fiesta</figcaption></figure>
+      <figure class="item" data-c="hombre"><img loading="lazy" src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=700&q=75&auto=format&fit=crop" alt="Zapatos de piel con cordones"><figcaption>Blucher de piel</figcaption></figure>
+    </div>
+    <p class="note">Las fotos son orientativas: la disponibilidad de modelos y tallas cambia cada semana.</p>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <h2>Por qué comprar en una zapatería de barrio</h2>
+    <p class="sub" style="margin-top:12px">Lo que no te da una tienda online.</p>
+    <div class="grid">
+      <div class="f"><h3>Te los pruebas</h3><p>Sin devoluciones ni esperas: sales de la tienda con el par que te va bien.</p></div>
+      <div class="f"><h3>Asesoramiento</h3><p>Te ayudamos con la talla, el ancho y el uso que le vas a dar.</p></div>
+      <div class="f"><h3>Te lo buscamos</h3><p>¿No queda tu número? Pregúntanos y miramos si podemos conseguirlo.</p></div>
+      <div class="f"><h3>Al lado de casa</h3><p>En tu barrio, a un paso de casa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tienda">
+  <div class="wrap about">
+    <div class="pics">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=700&q=75&auto=format&fit=crop" alt="Persona caminando con botas">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=700&q=75&auto=format&fit=crop" alt="Zapatilla blanca de piel">
+    </div>
+    <div>
+      <div class="eyebrow" style="color:var(--accent)">La tienda</div>
+      <h2>Una zapatería de las de siempre, en tu barrio</h2>
+      <p>En Calçats Nord te atendemos con calma. Aquí encontrarás calzado para el día a día, para el trabajo y para ocasiones especiales, para mujer y para hombre.</p>
+      <p>Pásate a vernos: estamos en el Carrer d'Exemple, 34.</p>
+      <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn btn-accent" href="tel:+34600000000">Llamar · 600 000 000</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div class="sec-head"><div><h2>Contacto</h2><p class="sub">¿Buscas un modelo o una talla? Escríbenos y te respondemos.</p></div></div>
+    <div class="cgrid">
+      <form id="form" novalidate>
+        <div class="row2">
+          <div><label for="n">Nombre</label><input id="n" required autocomplete="name"></div>
+          <div><label for="t">Teléfono</label><input id="t" type="tel" required autocomplete="tel"></div>
+        </div>
+        <label for="e">Email</label><input id="e" type="email" autocomplete="email">
+        <label for="q">¿En qué te podemos ayudar?</label>
+        <select id="q"><option>Busco un modelo concreto</option><option>Pregunta sobre tallas</option><option>Otra consulta</option></select>
+        <label for="m">Mensaje</label><textarea id="m" placeholder="Ej.: ¿tenéis botines de piel en el 38?"></textarea>
+        <button class="btn btn-accent" style="margin-top:18px;width:100%">Enviar mensaje</button>
+        <div class="ok" id="ok">¡Gracias! Te contestaremos lo antes posible.</div>
+      </form>
+      <div class="info">
+        <div class="box">
+          <h3>Calçats Nord</h3>
+          <p>Carrer d'Exemple, 34<br>Barcelona</p>
+          <p style="margin-top:8px"><a href="tel:+34600000000"><b>600 000 000</b></a></p>
+        </div>
+        <div class="box hrs" id="hrs">
+          <h3>Horario</h3>
+          <div data-d="1,2,3,4,5"><span>Lunes a viernes</span><span>9:30–13:30 · 17:00–20:30</span></div>
+          <div data-d="6"><span>Sábado</span><span>10:00–14:00</span></div>
+          <div data-d="0"><span>Domingo</span><span>Cerrado</span></div>
+        </div>
+        <div class="map"><iframe loading="lazy" title="Mapa de Calçats Nord" src="https://www.google.com/maps?q=Barcelona&output=embed"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Calçats Nord</b><br>Carrer d'Exemple, 34 · Barcelona · 600 000 000</div>
+    <div>Web de muestra · propuesta sin compromiso</div>
+  </div>
+</footer>
+
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+const header=document.getElementById('top');
+const onScroll=()=>header.classList.toggle('solid',scrollY>40);onScroll();addEventListener('scroll',onScroll);
+document.querySelectorAll('nav ul a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav ul').classList.remove('open')));
+// filtro de la galería
+document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip').forEach(x=>x.classList.toggle('on',x===c));
+  document.querySelectorAll('.item').forEach(i=>i.classList.toggle('hide',c.dataset.f!=='all'&&i.dataset.c!==c.dataset.f));
+}));
+// ampliar foto
+const lb=document.getElementById('lb');
+document.querySelectorAll('.item img').forEach(img=>img.addEventListener('click',()=>{lb.querySelector('img').src=img.src.replace('w=700','w=1400');lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+// día de hoy en el horario
+const d=new Date().getDay();
+document.querySelectorAll('#hrs div[data-d]').forEach(r=>{if(r.dataset.d.split(',').includes(String(d)))r.classList.add('today')});
+// formulario (demo)
+document.getElementById('form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const n=document.getElementById('n'),t=document.getElementById('t');
+  [n,t].forEach(x=>x.style.borderColor=x.value.trim()?'':'#C0392B');
+  if(!n.value.trim()||!t.value.trim())return;
+  document.getElementById('ok').style.display='block';e.target.reset();
+});
+</script>
+</body>
+</html>

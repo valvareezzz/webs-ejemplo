@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Veterinària Bon Amic · Veterinario en Barcelona</title>
+<meta name="description" content="Clínica Veterinària Bon Amic, en la Carrer d'Exemple, 56 (Barcelona). Consultas, vacunas, microchip y revisiones para perros y gatos. Pide cita online o llama al 600 000 000.">
+<meta name="theme-color" content="#0F5C5A">
+<link rel="alternate" hreflang="es" href="?lang=es"><link rel="alternate" hreflang="ca" href="?lang=ca"><link rel="alternate" hreflang="en" href="?lang=en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0F5C5A;--teal-d:#0A4442;--mint:#DDF2EE;--mint2:#EEF8F6;--coral:#FF7A59;--ink:#16302F;--muted:#5E7472;--line:#DCE8E6;--bg:#F7FBFA;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:Outfit,sans-serif;line-height:1.1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:700;border:0;transition:transform .15s,background .15s;font-size:.95rem}
+.btn:hover{transform:translateY(-1px)}
+.btn-coral{background:var(--coral);color:var(--white)}.btn-coral:hover{background:#F0603D}
+.btn-teal{background:var(--teal);color:var(--white)}.btn-teal:hover{background:var(--teal-d)}
+.btn-soft{background:var(--white);color:var(--teal);border:1.5px solid var(--line)}
+.btn svg{width:18px;height:18px}
+
+/* cabecera */
+header{position:sticky;top:0;z-index:40;background:rgba(247,251,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:22px;height:76px}
+.brand{display:flex;align-items:center;gap:10px;margin-right:auto}
+.brand svg{width:40px;height:40px}
+.brand b{font-family:Outfit;font-size:1.15rem;line-height:1.1}
+.brand small{display:block;color:var(--muted);font-weight:500;font-size:.78rem}
+nav.main{display:flex;gap:22px;font-weight:600;font-size:.93rem;color:var(--muted)}
+nav.main a:hover{color:var(--teal)}
+.lang{display:flex;background:var(--white);border:1px solid var(--line);border-radius:10px;padding:3px}
+.lang button{border:0;background:none;padding:6px 9px;border-radius:7px;font-weight:700;font-size:.8rem;color:var(--muted)}
+.lang button.on{background:var(--teal);color:var(--white)}
+
+/* hero */
+.hero{padding:64px 0 80px;background:radial-gradient(1200px 500px at 90% 0%,var(--mint) 0%,transparent 60%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--line);padding:7px 14px;border-radius:999px;font-weight:600;font-size:.85rem;color:var(--teal);margin-bottom:20px}
+.dot{width:9px;height:9px;border-radius:50%;background:#2BB673;box-shadow:0 0 0 4px rgba(43,182,115,.2)}
+.dot.off{background:#E5654B;box-shadow:0 0 0 4px rgba(229,101,75,.2)}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4rem);font-weight:800;color:var(--teal-d);margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--coral)}
+.hero p{font-size:1.12rem;color:var(--muted);max-width:520px;margin-bottom:28px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero .photo{position:relative}
+.hero .photo img{border-radius:28px;aspect-ratio:4/4.4;object-fit:cover;width:100%;box-shadow:0 30px 60px -20px rgba(15,92,90,.35)}
+.float{position:absolute;background:var(--white);border-radius:16px;padding:14px 16px;box-shadow:0 12px 30px rgba(22,48,47,.12);display:flex;align-items:center;gap:12px;font-weight:600;font-size:.9rem}
+.float .ic{width:40px;height:40px;border-radius:12px;background:var(--mint);display:grid;place-items:center;color:var(--teal)}
+.float .ic svg{width:22px;height:22px}
+.f1{left:-22px;bottom:36px}.f2{right:-14px;top:30px}
+.float small{display:block;color:var(--muted);font-weight:500;font-size:.78rem}
+
+section{padding:88px 0}
+.head{text-align:center;max-width:640px;margin:0 auto 44px}
+.head h2{font-size:clamp(2rem,4vw,2.8rem);color:var(--teal-d);margin-bottom:10px}
+.head p{color:var(--muted)}
+
+/* servicios */
+.filters{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.filters button{border:1.5px solid var(--line);background:var(--white);padding:8px 16px;border-radius:999px;font-weight:600;color:var(--muted);font-size:.9rem}
+.filters button.on{background:var(--teal);border-color:var(--teal);color:var(--white)}
+.services{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.svc{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:10px;transition:transform .2s,box-shadow .2s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 16px 30px -18px rgba(15,92,90,.4)}
+.svc .ic{width:48px;height:48px;border-radius:14px;background:var(--mint2);display:grid;place-items:center;color:var(--teal)}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:1.2rem}
+.svc p{color:var(--muted);font-size:.94rem;flex:1}
+.svc .for{font-size:.78rem;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.06em}
+.svc button{align-self:flex-start;background:none;border:0;color:var(--coral);font-weight:700;padding:0}
+.svc.hide{display:none}
+
+/* reserva */
+.book{background:var(--teal-d);color:var(--white)}
+.book .head h2{color:var(--white)}.book .head p{color:#B9D8D4}
+.panel{background:var(--white);color:var(--ink);border-radius:24px;max-width:860px;margin:0 auto;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);background:var(--mint2);border-bottom:1px solid var(--line)}
+.steps div{padding:14px 10px;text-align:center;font-weight:700;font-size:.85rem;color:var(--muted)}
+.steps div.on{color:var(--teal);box-shadow:inset 0 -3px 0 var(--teal)}
+.steps div.done{color:var(--teal)}
+.step{display:none;padding:30px}
+.step.on{display:block}
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.opt{border:1.5px solid var(--line);border-radius:14px;padding:14px;background:var(--white);text-align:left;font-weight:600}
+.opt small{display:block;color:var(--muted);font-weight:500}
+.opt.on{border-color:var(--teal);background:var(--mint2);box-shadow:0 0 0 3px rgba(15,92,90,.12)}
+.days{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:18px}
+.day{flex:none;width:72px;border:1.5px solid var(--line);border-radius:14px;padding:10px 0;text-align:center;background:var(--white)}
+.day b{display:block;font-family:Outfit;font-size:1.3rem}
+.day small{font-size:.75rem;color:var(--muted);text-transform:uppercase;font-weight:700}
+.day.on{border-color:var(--teal);background:var(--teal);color:var(--white)}.day.on small{color:#CFE7E3}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:8px}
+.slot{border:1.5px solid var(--line);border-radius:10px;padding:9px 0;background:var(--white);font-weight:600}
+.slot.on{background:var(--coral);border-color:var(--coral);color:var(--white)}
+.slot:disabled{opacity:.35;text-decoration:line-through;cursor:not-allowed}
+.form2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-weight:700;font-size:.85rem;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;background:var(--bg)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal)}
+.full{grid-column:1/-1}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;gap:10px}
+.err{color:#C0392B;font-weight:600;font-size:.9rem;min-height:1.2em}
+.summary{background:var(--mint2);border-radius:16px;padding:20px;margin:16px 0}
+.summary div{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px dashed var(--line)}
+.summary div:last-child{border:0}
+.done-ic{width:64px;height:64px;border-radius:50%;background:#E3F6EC;color:#1E8A55;display:grid;place-items:center;margin-bottom:14px}
+.done-ic svg{width:34px;height:34px}
+
+/* opiniones/por qué */
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.why div{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:24px}
+.why h3{font-size:1.1rem;margin:10px 0 6px}
+.why p{color:var(--muted);font-size:.94rem}
+.why .num{font-family:Outfit;font-weight:800;font-size:1.8rem;color:var(--coral)}
+
+/* preguntas */
+.faq{max-width:780px;margin:0 auto}
+details{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::after{content:"+";color:var(--teal);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:10px}
+
+/* contacto */
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:28px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:26px}
+.card h3{font-size:1.2rem;margin-bottom:12px}
+.hrs div{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed var(--line)}
+.hrs div.today{color:var(--teal);font-weight:800}
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:360px}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;display:block}
+.urg{margin-top:16px;padding:14px 16px;border-radius:14px;background:#FFF1EC;color:#9A3B22;font-size:.92rem}
+
+footer{background:var(--teal-d);color:#B9D8D4;padding:40px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer b{color:var(--white);font-family:Outfit}
+
+.fab{position:fixed;right:18px;bottom:18px;z-index:50;display:none}
+@media(max-width:920px){
+  nav.main{display:none}
+  header .wrap{height:64px;gap:12px}
+  .brand svg{width:34px;height:34px}
+  .brand b{font-size:.95rem}
+  .brand small{display:none}
+  .lang button{padding:5px 7px}
+  .hero .wrap,.contact{grid-template-columns:1fr}
+  .f1{left:10px}.f2{right:10px}
+  .form2{grid-template-columns:1fr}
+  .steps div{font-size:.72rem;padding:12px 4px}
+  .fab{display:inline-flex;box-shadow:0 10px 24px rgba(255,122,89,.45)}
+  section{padding:68px 0}
+}
+</style>
+</head>
+<body>
+<div style="background:#16302F;color:#fff;text-align:center;font:600 13px/1.4 system-ui,sans-serif;padding:8px 12px;position:relative;z-index:100">Web de ejemplo · negocio ficticio · <a href="index.html" style="color:#FFD39A">ver los 3 paquetes</a></div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0F5C5A"/><g fill="#DDF2EE"><ellipse cx="13" cy="16" rx="3" ry="3.8"/><ellipse cx="20" cy="12.5" rx="3" ry="3.8"/><ellipse cx="27" cy="16" rx="3" ry="3.8"/><path d="M20 19c-4.5 0-8 4.6-8 8 0 2.4 2 3.4 4.2 2.8 1.4-.4 2.4-.9 3.8-.9s2.4.5 3.8.9C26 30.4 28 29.4 28 27c0-3.4-3.5-8-8-8z"/></g><path d="M18.5 23.5h3M20 22v3" stroke="#FF7A59" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <div><b>Clínica Veterinària Bon Amic</b><small data-i="tagline">Veterinario en Barcelona</small></div>
+    </a>
+    <nav class="main">
+      <a href="#servicios" data-i="nav1">Servicios</a>
+      <a href="#cita" data-i="nav2">Pedir cita</a>
+      <a href="#preguntas" data-i="nav3">Preguntas</a>
+      <a href="#contacto" data-i="nav4">Contacto</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma">
+      <button data-l="es" class="on">ES</button><button data-l="ca">CA</button><button data-l="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="pill"><span class="dot" id="dot"></span><span id="openTxt"></span></div>
+      <h1 data-i="h1" data-html>Cuidamos de tu perro y tu gato <em>como si fueran nuestros</em></h1>
+      <p data-i="heroP">Consultas, vacunas, microchip y revisiones en Barcelona. Pide cita online en un minuto, sin esperas al teléfono.</p>
+      <div class="ctas">
+        <a class="btn btn-coral" href="#cita"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span data-i="ctaBook">Pedir cita online</span></a>
+        <a class="btn btn-soft" href="tel:+34600000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>600 000 000</a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=1200&q=80&auto=format&fit=crop" alt="Veterinaria acariciando a un gato">
+      <div class="float f2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><div><span data-i="fl1">Vacunas al día</span><small data-i="fl1s">Te avisamos cuando toca</small></div></div>
+      <div class="float f1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><span data-i="fl2">Cita en 1 minuto</span><small data-i="fl2s">Desde el móvil, 24 h</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="head"><h2 data-i="svcH">Servicios</h2><p data-i="svcP">Todo lo que tu mascota necesita para estar sana, en un mismo sitio.</p></div>
+    <div class="filters">
+      <button class="on" data-f="all" data-i="fAll">Todos</button>
+      <button data-f="dog" data-i="fDog">Perros</button>
+      <button data-f="cat" data-i="fCat">Gatos</button>
+    </div>
+    <div class="services" id="services"></div>
+    <p style="text-align:center;color:var(--muted);font-size:.85rem;margin-top:18px" data-i="svcNote">Lista orientativa: pregúntanos por cualquier otro servicio.</p>
+  </div>
+</section>
+
+<section class="book" id="cita">
+  <div class="wrap">
+    <div class="head"><h2 data-i="bookH">Pide cita online</h2><p data-i="bookP">Elige el servicio, el día y la hora. Te confirmamos por teléfono.</p></div>
+    <div class="panel">
+      <div class="steps"><div data-i="s1">1. Servicio</div><div data-i="s2">2. Día y hora</div><div data-i="s3">3. Tus datos</div><div data-i="s4">4. Confirmar</div></div>
+
+      <div class="step on" data-s="1">
+        <div class="opts" id="svcOpts"></div>
+        <div class="nav"><span class="err" id="e1"></span><button class="btn btn-teal" data-next data-i="next">Continuar</button></div>
+      </div>
+
+      <div class="step" data-s="2">
+        <div class="days" id="days"></div>
+        <div class="slots" id="slots"></div>
+        <div class="nav"><button class="btn btn-soft" data-prev data-i="back">Atrás</button><span class="err" id="e2"></span><button class="btn btn-teal" data-next data-i="next">Continuar</button></div>
+      </div>
+
+      <div class="step" data-s="3">
+        <div class="form2">
+          <div><label for="fn" data-i="lName">Tu nombre</label><input id="fn" autocomplete="name"></div>
+          <div><label for="fp" data-i="lPhone">Teléfono</label><input id="fp" type="tel" autocomplete="tel"></div>
+          <div><label for="pn" data-i="lPet">Nombre de la mascota</label><input id="pn"></div>
+          <div><label for="pt" data-i="lType">Es un…</label><select id="pt"><option value="dog" data-i="optDog">Perro</option><option value="cat" data-i="optCat">Gato</option><option value="other" data-i="optOther">Otro</option></select></div>
+          <div class="full"><label for="nt" data-i="lNotes">¿Algo que debamos saber? (opcional)</label><textarea id="nt" rows="3"></textarea></div>
+        </div>
+        <div class="nav"><button class="btn btn-soft" data-prev data-i="back">Atrás</button><span class="err" id="e3"></span><button class="btn btn-teal" data-next data-i="next">Continuar</button></div>
+      </div>
+
+      <div class="step" data-s="4">
+        <h3 data-i="sumH">Revisa tu cita</h3>
+        <div class="summary" id="summary"></div>
+        <div class="nav"><button class="btn btn-soft" data-prev data-i="back">Atrás</button><button class="btn btn-coral" id="confirm" data-i="confirm">Confirmar cita</button></div>
+      </div>
+
+      <div class="step" data-s="5">
+        <div class="done-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg></div>
+        <h3 data-i="okH">¡Solicitud enviada!</h3>
+        <p style="color:var(--muted);margin-top:8px" data-i="okP">Te llamaremos para confirmar la cita. Si necesitas cambiarla, llámanos al 600 000 000.</p>
+        <div class="nav" style="justify-content:flex-start"><button class="btn btn-soft" id="again" data-i="again">Pedir otra cita</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2 data-i="whyH">Por qué venir a vernos</h2></div>
+    <div class="why">
+      <div><div class="num">01</div><h3 data-i="w1">Cerca de casa</h3><p data-i="w1p">En el centro del barrio, fácil de llegar a pie, en metro o en coche.</p></div>
+      <div><div class="num">02</div><h3 data-i="w2">Sin esperas</h3><p data-i="w2p">Con la cita online sabes a qué hora te toca y no pierdes la mañana.</p></div>
+      <div><div class="num">03</div><h3 data-i="w3">Trato cercano</h3><p data-i="w3p">Te explicamos cada paso y resolvemos tus dudas con calma.</p></div>
+      <div><div class="num">04</div><h3 data-i="w4">En tu idioma</h3><p data-i="w4p">Te atendemos en castellano, catalán e inglés.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="preguntas" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><h2 data-i="faqH">Preguntas frecuentes</h2></div>
+    <div class="faq">
+      <details><summary data-i="q1">¿Cada cuánto hay que vacunar a mi perro o gato?</summary><p data-i="a1">Depende de la edad y de la vacuna. En la primera visita te hacemos un calendario y te avisamos cuando toque la siguiente dosis.</p></details>
+      <details><summary data-i="q2">¿El microchip es obligatorio?</summary><p data-i="a2">En Cataluña los perros, gatos y hurones deben llevar microchip. Te lo ponemos en consulta y lo damos de alta en el registro.</p></details>
+      <details><summary data-i="q3">¿Puedo venir sin cita?</summary><p data-i="a3">Sí, pero con cita te atendemos antes. Pídela online o llámanos.</p></details>
+      <details><summary data-i="q4">¿Qué hago en una urgencia fuera de horario?</summary><p data-i="a4">Fuera de nuestro horario, acude a un hospital veterinario de urgencias 24 horas. En horario de clínica, llámanos antes de venir.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" style="padding-top:0">
+  <div class="wrap contact">
+    <div>
+      <div class="card">
+        <h3>Clínica Veterinària Bon Amic</h3>
+        <p>Carrer d'Exemple, 56<br>Barcelona</p>
+        <p style="margin-top:10px"><a href="tel:+34600000000"><b>600 000 000</b></a></p>
+      </div>
+      <div class="card hrs" id="hrs" style="margin-top:16px">
+        <h3 data-i="hrsH">Horario</h3>
+        <div data-d="1,2,3,4,5"><span data-i="monFri">Lunes a viernes</span><span>10:00–14:00 · 16:30–20:30</span></div>
+        <div data-d="6"><span data-i="sat">Sábado</span><span>10:00–14:00</span></div>
+        <div data-d="0"><span data-i="sun">Domingo</span><span data-i="closed">Cerrado</span></div>
+      </div>
+      <div class="urg" data-i="urg">Urgencias fuera de horario: acude a un hospital veterinario 24 h.</div>
+    </div>
+    <div class="map"><iframe loading="lazy" title="Mapa" src="https://www.google.com/maps?q=Barcelona&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Clínica Veterinària Bon Amic</b><br>Carrer d'Exemple, 56 · Barcelona · 600 000 000</div>
+    <div data-i="demo">Web de muestra · propuesta sin compromiso</div>
+  </div>
+</footer>
+
+<a class="btn btn-coral fab" href="#cita" data-i="ctaBook">Pedir cita online</a>
+
+<script>
+const T={
+ es:{tagline:"Veterinario en Barcelona",nav1:"Servicios",nav2:"Pedir cita",nav3:"Preguntas",nav4:"Contacto",
+  h1:"Cuidamos de tu perro y tu gato <em>como si fueran nuestros</em>",heroP:"Consultas, vacunas, microchip y revisiones en Barcelona. Pide cita online en un minuto, sin esperas al teléfono.",
+  ctaBook:"Pedir cita online",fl1:"Vacunas al día",fl1s:"Te avisamos cuando toca",fl2:"Cita en 1 minuto",fl2s:"Desde el móvil, 24 h",
+  svcH:"Servicios",svcP:"Todo lo que tu mascota necesita para estar sana, en un mismo sitio.",fAll:"Todos",fDog:"Perros",fCat:"Gatos",svcNote:"Lista orientativa: pregúntanos por cualquier otro servicio.",
+  bookH:"Pide cita online",bookP:"Elige el servicio, el día y la hora. Te confirmamos por teléfono.",s1:"1. Servicio",s2:"2. Día y hora",s3:"3. Tus datos",s4:"4. Confirmar",
+  next:"Continuar",back:"Atrás",lName:"Tu nombre",lPhone:"Teléfono",lPet:"Nombre de la mascota",lType:"Es un…",optDog:"Perro",optCat:"Gato",optOther:"Otro",lNotes:"¿Algo que debamos saber? (opcional)",
+  sumH:"Revisa tu cita",confirm:"Confirmar cita",okH:"¡Solicitud enviada!",okP:"Te llamaremos para confirmar la cita. Si necesitas cambiarla, llámanos al 600 000 000.",again:"Pedir otra cita",
+  whyH:"Por qué venir a vernos",w1:"Cerca de casa",w1p:"En el centro del barrio, fácil de llegar a pie, en metro o en coche.",w2:"Sin esperas",w2p:"Con la cita online sabes a qué hora te toca y no pierdes la mañana.",w3:"Trato cercano",w3p:"Te explicamos cada paso y resolvemos tus dudas con calma.",w4:"En tu idioma",w4p:"Te atendemos en castellano, catalán e inglés.",
+  faqH:"Preguntas frecuentes",q1:"¿Cada cuánto hay que vacunar a mi perro o gato?",a1:"Depende de la edad y de la vacuna. En la primera visita te hacemos un calendario y te avisamos cuando toque la siguiente dosis.",q2:"¿El microchip es obligatorio?",a2:"En Cataluña los perros, gatos y hurones deben llevar microchip. Te lo ponemos en consulta y lo damos de alta en el registro.",q3:"¿Puedo venir sin cita?",a3:"Sí, pero con cita te atendemos antes. Pídela online o llámanos.",q4:"¿Qué hago en una urgencia fuera de horario?",a4:"Fuera de nuestro horario, acude a un hospital veterinario de urgencias 24 horas. En horario de clínica, llámanos antes de venir.",
+  hrsH:"Horario",monFri:"Lunes a viernes",sat:"Sábado",sun:"Domingo",closed:"Cerrado",urg:"Urgencias fuera de horario: acude a un hospital veterinario 24 h.",demo:"Web de muestra · propuesta sin compromiso",
+  open:"Abierto ahora",shut:"Ahora cerrado · pide cita online",book:"Pedir cita",
+  e1:"Elige un servicio",e2:"Elige día y hora",e3:"Rellena tu nombre, teléfono y el nombre de la mascota",
+  sumSvc:"Servicio",sumWhen:"Día y hora",sumPet:"Mascota",sumYou:"Tus datos",days:["dom","lun","mar","mié","jue","vie","sáb"],months:["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],dur:"min",
+  svc:[["Consulta general","Revisión completa, diagnóstico y tratamiento.","both"],["Vacunación","Vacunas y calendario personalizado según la edad.","both"],["Desparasitación","Interna y externa, con recordatorio de la próxima dosis.","both"],["Microchip y pasaporte","Identificación y alta en el registro; pasaporte para viajar.","both"],["Revisión de cachorro","Primera visita: vacunas, alimentación y educación.","dog"],["Revisión de gatito","Primera visita, vacunas y consejos para casa.","cat"],["Análisis","Analíticas de sangre y orina para chequeos y control.","both"],["Revisión sénior","Chequeo para mascotas mayores de 7 años.","both"]],
+  forDog:"Perros",forCat:"Gatos",forBoth:"Perros y gatos",bookThis:"Reservar →"},
+ ca:{tagline:"Veterinari a Barcelona",nav1:"Serveis",nav2:"Demanar cita",nav3:"Preguntes",nav4:"Contacte",
+  h1:"Cuidem el teu gos i el teu gat <em>com si fossin nostres</em>",heroP:"Consultes, vacunes, xip i revisions a Barcelona. Demana cita en línia en un minut, sense esperes al telèfon.",
+  ctaBook:"Demanar cita en línia",fl1:"Vacunes al dia",fl1s:"T'avisem quan toca",fl2:"Cita en 1 minut",fl2s:"Des del mòbil, 24 h",
+  svcH:"Serveis",svcP:"Tot el que la teva mascota necessita per estar sana, en un mateix lloc.",fAll:"Tots",fDog:"Gossos",fCat:"Gats",svcNote:"Llista orientativa: pregunta'ns per qualsevol altre servei.",
+  bookH:"Demana cita en línia",bookP:"Tria el servei, el dia i l'hora. Et confirmem per telèfon.",s1:"1. Servei",s2:"2. Dia i hora",s3:"3. Les teves dades",s4:"4. Confirmar",
+  next:"Continuar",back:"Enrere",lName:"El teu nom",lPhone:"Telèfon",lPet:"Nom de la mascota",lType:"És un…",optDog:"Gos",optCat:"Gat",optOther:"Altre",lNotes:"Alguna cosa que hàgim de saber? (opcional)",
+  sumH:"Revisa la cita",confirm:"Confirmar cita",okH:"Sol·licitud enviada!",okP:"Et trucarem per confirmar la cita. Si l'has de canviar, truca'ns al 600 000 000.",again:"Demanar una altra cita",
+  whyH:"Per què venir a veure'ns",w1:"A prop de casa",w1p:"Al centre del barri, fàcil d'arribar-hi a peu, en metro o en cotxe.",w2:"Sense esperes",w2p:"Amb la cita en línia saps a quina hora et toca i no perds el matí.",w3:"Tracte proper",w3p:"T'expliquem cada pas i resolem els teus dubtes amb calma.",w4:"En el teu idioma",w4p:"T'atenem en castellà, català i anglès.",
+  faqH:"Preguntes freqüents",q1:"Cada quant s'ha de vacunar el meu gos o gat?",a1:"Depèn de l'edat i de la vacuna. A la primera visita et fem un calendari i t'avisem quan toqui la següent dosi.",q2:"El xip és obligatori?",a2:"A Catalunya els gossos, gats i fures han de portar xip. Te'l posem a la consulta i el donem d'alta al registre.",q3:"Puc venir sense cita?",a3:"Sí, però amb cita t'atenem abans. Demana-la en línia o truca'ns.",q4:"Què faig en una urgència fora d'horari?",a4:"Fora del nostre horari, ves a un hospital veterinari d'urgències 24 hores. En horari de clínica, truca'ns abans de venir.",
+  hrsH:"Horari",monFri:"Dilluns a divendres",sat:"Dissabte",sun:"Diumenge",closed:"Tancat",urg:"Urgències fora d'horari: ves a un hospital veterinari 24 h.",demo:"Web de mostra · proposta sense compromís",
+  open:"Obert ara",shut:"Ara tancat · demana cita en línia",book:"Demanar cita",
+  e1:"Tria un servei",e2:"Tria dia i hora",e3:"Omple el teu nom, telèfon i el nom de la mascota",
+  sumSvc:"Servei",sumWhen:"Dia i hora",sumPet:"Mascota",sumYou:"Les teves dades",days:["dg","dl","dt","dc","dj","dv","ds"],months:["gen","feb","mar","abr","mai","jun","jul","ago","set","oct","nov","des"],dur:"min",
+  svc:[["Consulta general","Revisió completa, diagnòstic i tractament.","both"],["Vacunació","Vacunes i calendari personalitzat segons l'edat.","both"],["Desparasitació","Interna i externa, amb recordatori de la propera dosi.","both"],["Xip i passaport","Identificació i alta al registre; passaport per viatjar.","both"],["Revisió de cadell","Primera visita: vacunes, alimentació i educació.","dog"],["Revisió de gatet","Primera visita, vacunes i consells per a casa.","cat"],["Anàlisis","Analítiques de sang i orina per a revisions i control.","both"],["Revisió sènior","Revisió per a mascotes de més de 7 anys.","both"]],
+  forDog:"Gossos",forCat:"Gats",forBoth:"Gossos i gats",bookThis:"Reservar →"},
+ en:{tagline:"Vet in Barcelona",nav1:"Services",nav2:"Book",nav3:"FAQ",nav4:"Contact",
+  h1:"We care for your dog and cat <em>like they were our own</em>",heroP:"Check-ups, vaccines, microchips and health checks in Barcelona. Book online in one minute, no waiting on the phone.",
+  ctaBook:"Book online",fl1:"Vaccines up to date",fl1s:"We remind you when it's due",fl2:"Book in 1 minute",fl2s:"From your phone, 24/7",
+  svcH:"Services",svcP:"Everything your pet needs to stay healthy, in one place.",fAll:"All",fDog:"Dogs",fCat:"Cats",svcNote:"Indicative list: ask us about any other service.",
+  bookH:"Book an appointment",bookP:"Choose the service, day and time. We'll confirm by phone.",s1:"1. Service",s2:"2. Date & time",s3:"3. Your details",s4:"4. Confirm",
+  next:"Continue",back:"Back",lName:"Your name",lPhone:"Phone",lPet:"Pet's name",lType:"It's a…",optDog:"Dog",optCat:"Cat",optOther:"Other",lNotes:"Anything we should know? (optional)",
+  sumH:"Check your appointment",confirm:"Confirm appointment",okH:"Request sent!",okP:"We'll call you to confirm. To change it, call us on +34 600 000 000.",again:"Book another",
+  whyH:"Why visit us",w1:"Close to home",w1p:"Right in Barcelona, easy to reach on foot, by metro or by car.",w2:"No waiting",w2p:"With online booking you know your time and don't lose the morning.",w3:"Friendly care",w3p:"We explain every step and answer your questions calmly.",w4:"Your language",w4p:"We speak Spanish, Catalan and English.",
+  faqH:"Frequently asked questions",q1:"How often should my dog or cat be vaccinated?",a1:"It depends on age and vaccine. At the first visit we set up a schedule and remind you when the next dose is due.",q2:"Is a microchip mandatory?",a2:"In Catalonia dogs, cats and ferrets must be microchipped. We implant it in the clinic and register it.",q3:"Can I come without an appointment?",a3:"Yes, but with an appointment we'll see you sooner. Book online or call us.",q4:"What should I do in an emergency outside opening hours?",a4:"Outside our hours, go to a 24-hour emergency veterinary hospital. During clinic hours, call us before coming.",
+  hrsH:"Opening hours",monFri:"Monday to Friday",sat:"Saturday",sun:"Sunday",closed:"Closed",urg:"Emergencies outside opening hours: go to a 24-hour veterinary hospital.",demo:"Sample website · no-obligation proposal",
+  open:"Open now",shut:"Closed now · book online",book:"Book",
+  e1:"Choose a service",e2:"Choose a date and time",e3:"Please fill in your name, phone and pet's name",
+  sumSvc:"Service",sumWhen:"Date & time",sumPet:"Pet",sumYou:"Your details",days:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],months:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],dur:"min",
+  svc:[["General check-up","Full examination, diagnosis and treatment.","both"],["Vaccination","Vaccines and a schedule tailored to your pet's age.","both"],["Deworming","Internal and external, with a reminder for the next dose.","both"],["Microchip & passport","Identification and registration; pet passport for travel.","both"],["Puppy check","First visit: vaccines, feeding and training tips.","dog"],["Kitten check","First visit, vaccines and tips for home.","cat"],["Lab tests","Blood and urine tests for check-ups and monitoring.","both"],["Senior check","Health check for pets over 7 years old.","both"]],
+  forDog:"Dogs",forCat:"Cats",forBoth:"Dogs & cats",bookThis:"Book →"}
+};
+const ICONS=['<path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 12 0V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 12 0v-4"/><circle cx="20" cy="10" r="2"/>','<path d="m18 2 4 4M17 7l3-3M19 9 8.7 19.3a1 1 0 0 1-1.4 0l-2.6-2.6a1 1 0 0 1 0-1.4L15 5M9 11l4 4M5 19l-3 3M14 4l6 6"/>','<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>','<rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/>','<circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.8 1.2 1.6 1.6 0 0 0-1.4-1.2H4.5A2.5 2.5 0 0 1 4.5 14H5a5 5 0 0 1 4-4z"/>','<path d="M12 5c.7-.7 1.6-1 2.5-1 2.1 0 3.5 1.8 3.5 3.8 0 3.2-3.4 6.2-6 8.2-2.6-2-6-5-6-8.2C6 5.8 7.4 4 9.5 4c.9 0 1.8.3 2.5 1z"/>','<path d="M10 2v7.5L4.6 18a2 2 0 0 0 1.7 3h11.4a2 2 0 0 0 1.7-3L14 9.5V2M8.5 2h7M7 16h10"/>','<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>'];
+const HOURS={1:[[600,840],[990,1230]],2:[[600,840],[990,1230]],3:[[600,840],[990,1230]],4:[[600,840],[990,1230]],5:[[600,840],[990,1230]],6:[[600,840]],0:[]};
+let L=new URLSearchParams(location.search).get('lang')||'es'; if(!T[L])L='es';
+const st={svc:null,date:null,time:null,step:1};
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+
+function applyLang(){
+  const t=T[L]; document.documentElement.lang=L;
+  $$('[data-i]').forEach(el=>{const v=t[el.dataset.i]; if(v==null)return; if(el.hasAttribute('data-html'))el.innerHTML=v; else el.textContent=v;});
+  $$('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.l===L));
+  renderServices(); renderOpts(); renderDays(); renderOpen(); if(st.step===4)renderSummary();
+}
+function renderServices(){
+  const t=T[L], f=$('.filters button.on').dataset.f;
+  $('#services').innerHTML=t.svc.map(([n,d,w],i)=>`<article class="svc ${f!=='all'&&w!=='both'&&w!==f?'hide':''}"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICONS[i]}</svg></div><span class="for">${w==='dog'?t.forDog:w==='cat'?t.forCat:t.forBoth}</span><h3>${n}</h3><p>${d}</p><button data-book="${i}">${t.bookThis}</button></article>`).join('');
+  $$('[data-book]').forEach(b=>b.onclick=()=>{st.svc=+b.dataset.book;renderOpts();go(1);$('#cita').scrollIntoView()});
+}
+function renderOpts(){
+  const t=T[L];
+  $('#svcOpts').innerHTML=t.svc.map(([n],i)=>`<button class="opt ${st.svc===i?'on':''}" data-o="${i}">${n}<small>30 ${t.dur}</small></button>`).join('');
+  $$('.opt').forEach(b=>b.onclick=()=>{st.svc=+b.dataset.o;renderOpts();$('#e1').textContent=''});
+}
+function renderDays(){
+  const t=T[L], out=[]; const d=new Date(); d.setHours(0,0,0,0);
+  for(let i=0;out.length<12&&i<20;i++){const x=new Date(d);x.setDate(d.getDate()+i);if(HOURS[x.getDay()].length)out.push(x)}
+  $('#days').innerHTML=out.map(x=>{const k=`${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,'0')}-${String(x.getDate()).padStart(2,'0')}`;return `<button class="day ${st.date===k?'on':''}" data-d="${k}"><small>${t.days[x.getDay()]}</small><b>${x.getDate()}</b><small>${t.months[x.getMonth()]}</small></button>`}).join('');
+  $$('.day').forEach(b=>b.onclick=()=>{st.date=b.dataset.d;st.time=null;renderDays();$('#e2').textContent=''});
+  renderSlots();
+}
+function renderSlots(){
+  if(!st.date){$('#slots').innerHTML='';return}
+  const day=new Date(st.date+'T00:00'), now=new Date(), slots=[];
+  HOURS[day.getDay()].forEach(([a,b])=>{for(let m=a;m+30<=b;m+=30)slots.push(m)});
+  const isToday=day.toDateString()===now.toDateString(), nm=now.getHours()*60+now.getMinutes();
+  // algunas horas aparecen ocupadas para que la demo parezca real
+  const seed=day.getDate();
+  $('#slots').innerHTML=slots.map(m=>{const hh=String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0');const busy=(isToday&&m<=nm+30)||((m/30+seed)%5===0);return `<button class="slot ${st.time===hh?'on':''}" ${busy?'disabled':''} data-t="${hh}">${hh}</button>`}).join('');
+  $$('.slot').forEach(b=>b.onclick=()=>{st.time=b.dataset.t;renderSlots();$('#e2').textContent=''});
+}
+function renderOpen(){
+  const n=new Date(), m=n.getHours()*60+n.getMinutes(), open=HOURS[n.getDay()].some(([a,b])=>m>=a&&m<b);
+  $('#dot').classList.toggle('off',!open); $('#openTxt').textContent=open?T[L].open:T[L].shut;
+  $$('#hrs div[data-d]').forEach(r=>r.classList.toggle('today',r.dataset.d.split(',').includes(String(n.getDay()))));
+}
+function renderSummary(){
+  const t=T[L], d=new Date(st.date+'T00:00');
+  const pet=$('#pn').value+' ('+$('#pt').selectedOptions[0].textContent+')';
+  $('#summary').innerHTML=[[t.sumSvc,t.svc[st.svc][0]],[t.sumWhen,`${t.days[d.getDay()]} ${d.getDate()} ${t.months[d.getMonth()]} · ${st.time}`],[t.sumPet,pet],[t.sumYou,$('#fn').value+' · '+$('#fp').value]]
+    .map(([a,b])=>`<div><span>${a}</span><b>${b.replace(/</g,'&lt;')}</b></div>`).join('');
+}
+function go(n){
+  st.step=n; $$('.step').forEach(s=>s.classList.toggle('on',+s.dataset.s===n));
+  $$('.steps div').forEach((s,i)=>{s.classList.toggle('on',i+1===n);s.classList.toggle('done',i+1<n)});
+  if(n===4)renderSummary();
+}
+$$('[data-next]').forEach(b=>b.onclick=()=>{
+  const t=T[L];
+  if(st.step===1&&st.svc==null)return $('#e1').textContent=t.e1;
+  if(st.step===2&&(!st.date||!st.time))return $('#e2').textContent=t.e2;
+  if(st.step===3&&(!$('#fn').value.trim()||!$('#fp').value.trim()||!$('#pn').value.trim()))return $('#e3').textContent=t.e3;
+  $('#e3').textContent=''; go(st.step+1);
+});
+$$('[data-prev]').forEach(b=>b.onclick=()=>go(st.step-1));
+$('#confirm').onclick=()=>go(5);
+$('#again').onclick=()=>{Object.assign(st,{svc:null,date:null,time:null});['fn','fp','pn','nt'].forEach(i=>$('#'+i).value='');renderOpts();renderDays();go(1)};
+$$('.filters button').forEach(b=>b.onclick=()=>{$$('.filters button').forEach(x=>x.classList.toggle('on',x===b));renderServices()});
+$$('.lang button').forEach(b=>b.onclick=()=>{L=b.dataset.l;history.replaceState(null,'','?lang='+L);applyLang()});
+applyLang();
+</script>
+</body>
+</html>
